@@ -2,7 +2,7 @@ import {describe, expect, test} from '@jest/globals';
 import {Tokenizer} from '../src/tokenizer';
 import { BinaryOp, IntegerNode, Parser } from '../src/parser';
 
-describe(Tokenizer, () => {
+describe(Parser, () => {
     const tokenizer = new Tokenizer();
     const parser = new Parser();
 

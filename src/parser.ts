@@ -47,4 +47,5 @@ export class BinaryOp implements Node {
     constructor(public readonly left: Node, public readonly operation: string, public readonly right: Node) {}
 }
 
-interface Node {}
+export interface Node {
+}
