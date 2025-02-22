@@ -1,5 +1,3 @@
-export {}
-
 export class Tokenizer
 {
     tokenize(expression: string): Token[] {
@@ -25,6 +23,8 @@ export class Tokenizer
                 case '*':
                     tokens.push(new Token(Token.T_MUL));
                     break;
+                case ' ':
+                    continue;
                 default:
                     throw new Error(`Do not know how to parse operator: ${char}`);
             }
@@ -50,5 +50,5 @@ export class Token
     static readonly T_ADD = 'plus';
     static readonly T_MUL = 'mul';
 
-    constructor(public readonly type: string, public readonly value?: string) {}
+    constructor(public readonly type: string, public readonly value: string = '') {}
 }
