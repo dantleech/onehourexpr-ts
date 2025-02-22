@@ -29,5 +29,12 @@ describe(Tokenizer, () => {
             new Token(Token.T_MUL)
         ]);
     }); 
+    test('1 + 22', () => {
+        expect(tokenizer.tokenize('1 + 22')).toEqual([
+            new Token(Token.T_INT, '1'),
+            new Token(Token.T_ADD),
+            new Token(Token.T_INT, '22'),
+        ]);
+    }); 
 });
 
