@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  },
+  "name": "onehourexpr-ts",
+  "version": "1.0.0",
+  "description": "Bootstrap for workshop",
+  "main": "index.ts",
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@jest/globals": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
