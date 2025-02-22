@@ -47,7 +47,7 @@ export class Token
 {
     static readonly T_INT = 'int';
     static readonly T_SUB = 'sub';
-    static readonly T_ADD = 'plus';
+    static readonly T_ADD = 'add';
     static readonly T_MUL = 'mul';
 
     constructor(public readonly type: string, public readonly value: string = '') {}
